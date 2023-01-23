@@ -1,6 +1,11 @@
 <script setup>
 
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+// Routing 
+
+const router = useRouter();
 
 // Reactive data
 
@@ -46,7 +51,9 @@ async function sendForm() {
         },
     })
         .then((response) => {
-            //TODO
+            router.push({
+                name: 'success',
+            });
         })
         .catch(function (error) {
             if (error.response.status == 422) {
