@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/public/hot
+/public/build
+npm-debug.log
+/.idea
+/.vscode
+/*.code-workspace
