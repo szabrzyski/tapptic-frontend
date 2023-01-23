@@ -16,6 +16,7 @@ const message = ref('');
 const submitErrors = ref([]);
 
 // Data
+
 const mockApiEndpoint = 'https://blackfur.free.beeceptor.com/';
 const mockApiRequests = ['success', 'validationerror', 'othererror'];
 
